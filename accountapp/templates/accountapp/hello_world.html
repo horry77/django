@@ -22,8 +22,10 @@
             <input type="submit" value="send" >
 
         </form>
+        {%  for data in data_list %}
 
-    <h1>{{ new_model.text }}</h1>
+    <h1>{{ data.text }}</h1>
+    {% endfor %}
 
 
 
