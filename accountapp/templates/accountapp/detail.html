@@ -8,7 +8,7 @@
         <h4>{{ target_user.username }}</h4>
             <img src="{{ target_user.profile.image.url }}" class="profile_image m-4" alt="profile image">
             <h2 class="NNS_B"> {{ target_user.profile.nickname }}
-                        {%  if target_user_user == user%}
+                        {%  if target_user == user%}
 
             <a href="{%url 'profileapp:update' pk=target_user.profile.pk %}">
                 edit
